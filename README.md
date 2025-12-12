@@ -52,33 +52,32 @@ All data is retrieved directly from the Amazon Polarity Dataset, so no manual da
 
 This will call run_pipeline(), load the Amazon Polarity dataset, perform feature extraction, sentiment analysis, clustering, and generate prioritized insights automatically.
 
-Packages Used
-# NLP / ML
+# Packages Used
+NLP / ML:
 import nltk
 
-# Download the stopwords corpus (one-time; cached under ~/.cache/nltk or ~/nltk_data)
+Download the stopwords corpus (one-time; cached under ~/.cache/nltk or ~/nltk_data):
 nltk.download('stopwords')
-
 from nltk.tokenize import sent_tokenize
 from nltk.corpus import stopwords
 
-# SBERT for sentence embeddings
+SBERT for sentence embeddings:
 from sentence_transformers import SentenceTransformer
 
-# Clustering / Vectorization
+Clustering / Vectorization:
 from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# Fuzzy matching for aspect normalization
+Fuzzy matching for aspect normalization:
 from rapidfuzz import process, fuzz
 
-# Keyword extraction
+Keyword extraction:
 from keybert import KeyBERT
 
-# Density-based clustering
+Density-based clustering:
 import hdbscan
 
-# Optional transformer-based sentiment
+Optional transformer-based sentiment:
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from scipy.special import softmax
 
