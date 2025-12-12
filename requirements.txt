@@ -1,0 +1,7 @@
+datasets
+sentence-transformers
+keybert
+umap-learn
+hdbscan
+nltk
+scikit-learn
